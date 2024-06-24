@@ -248,10 +248,10 @@ class HomeFragment : Fragment(), OnMapReadyCallback, NearLocationInterface,
         locationRequest.fastestInterval = 5000
         locationRequest.priority = LocationRequest.PRIORITY_HIGH_ACCURACY
         locationCallback = object : LocationCallback() {
-            override fun onLocationResult(locationResult: LocationResult?) {
-                super.onLocationResult(locationResult)
+            override fun onLocationResult(p0: LocationResult) {
+                super.onLocationResult(p0)
 
-                for (location in locationResult?.locations!!) {
+                for (location in p0?.locations!!) {
                     Log.d("TAG", "onLocationResult: ${location.longitude} ${location.latitude}")
                 }
             }
