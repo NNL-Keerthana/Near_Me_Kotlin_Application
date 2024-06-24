@@ -28,4 +28,5 @@ class AppConstant {
                 PlaceModel(9, R.drawable.ic_saloon, "Beauty Salons", "beauty_salon")
             )
     }
+    // hyg
 }
