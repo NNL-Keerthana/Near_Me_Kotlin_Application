@@ -73,7 +73,7 @@
                     android:layout_marginTop="10dp"
                     android:ellipsize="end"
                     android:maxLines="1"
-                    android:text="From"
+                    android:text="Enter Location"
                     android:textColor="@color/quantum_black_text"
                     android:textStyle="bold" />
 
@@ -103,7 +103,7 @@
                     android:layout_alignStart="@+id/view"
                     android:layout_marginTop="10dp"
                     android:layout_toEndOf="@+id/imgEndLocation"
-                    android:text="To"
+                    android:text="Select Service"
                     android:textColor="@color/quantum_black_text"
                     android:textStyle="bold" />
 
@@ -127,7 +127,7 @@
 
         <HorizontalScrollView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="100dp"
             android:layout_marginHorizontal="20dp"
             android:layout_marginTop="10dp"
             android:scrollbars="none">
@@ -146,10 +146,10 @@
 
                 <com.google.android.material.chip.Chip
                     android:id="@+id/btnChipDriving"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
                     android:checkable="true"
-                    android:text="Driving"
+                    android:text="Vet"
                     android:textColor="@color/white"
                     app:checkedIconEnabled="true"
                     app:chipBackgroundColor="@color/primaryColor" />
@@ -159,7 +159,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:checkable="true"
-                    android:text="Walking"
+                    android:text="Fodder"
                     android:textColor="@color/white"
                     app:chipBackgroundColor="@color/primaryColor" />
 
@@ -168,7 +168,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:checkable="true"
-                    android:text="Bike"
+                    android:text="Trader"
                     android:textColor="@color/white"
                     app:chipBackgroundColor="@color/primaryColor" />
 
@@ -177,7 +177,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:checkable="true"
-                    android:text="Transit"
+                    android:text="Shelter House"
                     android:textColor="@color/white"
                     app:chipBackgroundColor="@color/primaryColor" />
 

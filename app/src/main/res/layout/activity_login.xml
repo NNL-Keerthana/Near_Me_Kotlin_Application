@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/primaryColor"
     tools:context=".activities.LoginActivity">
 
     <ImageView
@@ -12,7 +11,7 @@
         android:layout_height="match_parent"
         android:alpha="0.6"
         android:scaleType="centerCrop"
-        android:src="@drawable/login_background" />
+        android:src="@drawable/anitra" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -30,8 +29,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="Near Me"
-                android:textColor="@color/white"
+                android:text="Anitra"
+                android:textColor="@color/black"
                 android:textSize="40dp"
                 android:textStyle="bold" />
         </LinearLayout>
@@ -46,32 +45,32 @@
             <EditText
                 android:id="@+id/edtEmail"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="48dp"
                 android:layout_marginHorizontal="30dp"
-                android:backgroundTint="@color/white"
-                android:fontFamily="@font/playfair_display"
                 android:drawableStart="@drawable/ic_email"
                 android:drawablePadding="10dp"
-                android:drawableTint="@color/white"
+                android:fontFamily="@font/playfair_display"
                 android:hint="Email"
                 android:inputType="textEmailAddress"
                 android:maxLines="1"
-                android:textColor="@color/white" />
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:textStyle="bold" />
 
             <EditText
                 android:id="@+id/edtPassword"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="48dp"
                 android:layout_marginHorizontal="30dp"
                 android:layout_marginTop="10dp"
-                android:backgroundTint="@color/white"
                 android:drawableStart="@drawable/ic_lock"
                 android:drawablePadding="10dp"
-                android:drawableTint="@color/white"
                 android:hint="Password"
                 android:inputType="textPassword"
                 android:maxLines="1"
-                android:textColor="@color/white" />
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/txtForgetPassword"
@@ -79,9 +78,11 @@
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="30dp"
                 android:gravity="end"
-                android:text="Forget password?"
-                android:textColor="@color/white"
-                android:textSize="20dp" />
+                android:text="Forgot password?"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:textStyle="bold" />
 
 
             <com.google.android.material.button.MaterialButton
@@ -90,26 +91,13 @@
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="30dp"
                 android:layout_marginTop="10dp"
-                android:backgroundTint="@color/transparentColor"
                 android:padding="15dp"
                 android:text="Login"
+                android:textColorHint="@color/black"
                 android:textStyle="bold"
                 app:cornerRadius="20dp"
                 app:elevation="10dp"
-                app:strokeColor="@color/white"
                 app:strokeWidth="1dp" />
-
-            <com.google.android.material.button.MaterialButton
-                android:id="@+id/btnSignUp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginHorizontal="30dp"
-                android:layout_marginTop="10dp"
-                android:padding="15dp"
-                android:text="Signup"
-                android:textStyle="bold"
-                app:cornerRadius="20dp"
-                app:elevation="10dp" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -123,18 +111,31 @@
                     android:layout_height="1dp"
                     android:background="@color/white" />
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginHorizontal="20dp"
-                    android:text="OR"
-                    android:textColor="@color/white" />
-
                 <View
                     android:layout_width="120dp"
                     android:layout_height="1dp"
                     android:background="@color/white" />
             </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:text="OR"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnSignUp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginTop="10dp"
+                android:padding="15dp"
+                android:text="Signup"
+                android:textStyle="bold"
+                app:cornerRadius="20dp"
+                app:elevation="10dp" />
 
         </LinearLayout>
 
